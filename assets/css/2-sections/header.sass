@@ -1,0 +1,41 @@
+.home-wrap header
+  position: fixed
+  display: flex
+  justify-content: center
+  height: 85px
+  width: 100%
+  background: white
+  margin: 0
+  padding: 0
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.4)
+
+  .logo
+    +hide-text
+    height: 45px
+    background:
+      image: url(/assets/img/kentaru-logo.svg)
+      repeat: no-repeat
+      position: center
+      size: contain
+    margin: 20px 0 0 0
+    padding: 0
+    cursor: pointer
+
+  .site-nav
+    background: #fff
+    display: none
+    flex-direction: column
+    align-items: center
+    padding: 10px
+    margin-top: 15px
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4)
+
+    ul
+      list-style: none
+      margin: 0 70px
+      padding: 0
+
+      li
+        text-align: justify
+        margin-bottom: 10px
+        padding: 0

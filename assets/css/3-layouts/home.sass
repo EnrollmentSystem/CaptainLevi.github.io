@@ -1,0 +1,51 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+  @media (max-width: 775px)
+    display: block
+
+.home-sections
+  flex: 1
+
+  .flex
+    display: flex
+    flex-direction: row
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+.col-des
+  display: flex
+  max-width: 1040px
+  margin: 0 10px
+  flex-direction: column
+
+//col-1
+.col-1
+  display: flex
+  max-width: 470px
+  margin: 0 10px
+
+  h1
+    margin-top: 125px
+
+@media (max-width: 775px)
+  .home-sections .flex
+    display: block
+
+    .col-1
+      max-width: 100%
+      margin: 0 20px
+
+//col-2
+.col-2
+  display: flex
+  max-width: 470px
+  margin: 0 10px
+
+  h1
+    margin-top: 125px

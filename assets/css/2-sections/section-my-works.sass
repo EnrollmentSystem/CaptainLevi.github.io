@@ -1,0 +1,61 @@
+section.my-works
+  background:
+    image: url(/assets/img/section-myworks-bg.jpg)
+    attachment: fixed
+  min-height: 700px
+
+  @media (max-width: 775px)
+    section.my-works
+      height: 1170px
+
+  h1
+    font-size: 56px
+    color: #fff
+
+  @media (max-width:775px)
+      h1
+        font-size: 36px
+        color: #fff
+        margin: 40px auto 20px
+
+
+  .des-img
+    margin: 0 5px
+    border: 5px solid white
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.2)
+
+  a:hover
+    animation-name: tada
+    animation-duration: 1s
+    animation-fill-mode: both
+    z-index: 1
+
+  @media (max-width: 481px)
+    .des-img
+      height: 130px
+
+  .designs
+    display: flex
+    width: 1040px
+    flex-wrap: wrap
+
+  @media (max-width: 775px)
+    .designs.flex--center
+      width: 100%
+      padding-bottom: 45px
+
+@keyframes tada
+  from
+    transform: scale3d(1, 1, 1)
+
+  10%, 20%
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+
+  30%, 50%, 70%, 90%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+
+  40%, 60%, 80%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+  to
+    transform: scale3d(1, 1, 1)
